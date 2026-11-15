@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GTA Vice — notícias, novidades, curiosidades e gameplays de GTA 6 e do universo Grand Theft Auto.">
+  <meta name="theme-color" content="#10091d">
+  <title>GTA Vice | Notícias, novidades e gameplays de GTA 6</title>
+  <style>
+    :root{--bg:#090711;--panel:#151020;--panel2:#1d142b;--text:#f8f4ff;--muted:#b9adc9;--pink:#ff2ca8;--cyan:#38d9ff;--purple:#8d55ff;--line:#ffffff18;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#39104d55,transparent 38%),var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{border-bottom:1px solid var(--line);background:#090711d9;position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:1000;letter-spacing:-1.4px;font-size:25px}
+    .brand-mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--pink),var(--purple) 60%,var(--cyan));display:grid;place-items:center;color:#100817;font-weight:1000;box-shadow:0 0 28px #ff2ca855}
+    .brand span:last-child{color:var(--pink)}.links{display:flex;gap:25px;color:#ded5e9;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}
+    .links a:hover{color:var(--pink)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:9px;padding:9px 12px}
+    .hero{min-height:520px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#090711 0%,#090711ed 40%,#09071135 100%),radial-gradient(ellipse at 78% 45%,#ff2ca855,transparent 35%),radial-gradient(ellipse at 90% 20%,#3b75ff55,transparent 35%),linear-gradient(130deg,#22102d,#120b20 55%,#321343)}
+    .hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 70px,#ffffff05 71px 72px);pointer-events:none}
+    .hero:after{content:"VICE CITY";position:absolute;right:4%;bottom:-55px;font-size:clamp(90px,18vw,230px);font-weight:1000;letter-spacing:-.09em;color:#ffffff08;white-space:nowrap}
+    .hero-content{position:relative;z-index:1;max-width:650px;padding:78px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#ffd2f0;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+    .eyebrow:before{content:"";width:26px;height:2px;background:var(--pink);box-shadow:0 0 12px var(--pink)}
+    h1{font-size:clamp(48px,8vw,88px);line-height:.94;letter-spacing:-5px;margin:18px 0 20px;text-transform:uppercase}
+    h1 em{font-style:normal;color:var(--pink);text-shadow:0 0 32px #ff2ca855}
+    .hero p{color:#d3c8df;font-size:17px;max-width:540px;margin:0 0 28px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 19px;border-radius:8px;font-size:12px;font-weight:950;letter-spacing:.8px;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);transition:.2s}
+    .btn-primary{background:linear-gradient(110deg,var(--pink),#a333ff);border:0;color:white;box-shadow:0 8px 30px #ff2ca833}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+    .hero-stats{display:flex;gap:26px;margin-top:34px;color:#b9adc9;font-size:11px;text-transform:uppercase;letter-spacing:1px}.hero-stats b{display:block;color:white;font-size:18px;letter-spacing:0}
+    .section{padding:66px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}
+    .kicker{color:var(--pink);font-size:10px;font-weight:950;letter-spacing:2px;text-transform:uppercase}
+    h2{font-size:clamp(27px,4vw,38px);line-height:1.05;letter-spacing:-1.5px;margin:7px 0 0;text-transform:uppercase}
+    .section-head p{color:var(--muted);font-size:13px;margin:0;max-width:400px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:linear-gradient(145deg,#1b1428,#100d19);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:.22s}
+    .card:hover{transform:translateY(-4px);border-color:#ff2ca866;box-shadow:0 14px 35px #0005}
+    .thumb{height:180px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 35%,#ff9b5c88,transparent 23%),linear-gradient(135deg,#40124c,#14152e 55%,#071c35)}
+    .thumb:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,#0e0918aa),repeating-linear-gradient(90deg,transparent 0 48px,#fff1 49px 50px)}
+    .thumb .sun{position:absolute;width:130px;height:130px;border-radius:50%;right:17%;top:20px;background:linear-gradient(#ffcf8b,#ff3c9f);filter:blur(.2px);box-shadow:0 0 45px #ff3c9f77}
+    .thumb .palm{position:absolute;bottom:-30px;left:12%;font-size:120px;filter:drop-shadow(0 0 10px #0009);opacity:.7}
+    .thumb .tag{position:absolute;left:15px;top:14px;background:#090711c9;border:1px solid #ffffff30;border-radius:5px;padding:5px 8px;color:#ffd4ef;font-size:9px;font-weight:900;letter-spacing:1px}
+    .card-body{padding:18px}.meta{font-size:10px;color:#a99bb9;text-transform:uppercase;letter-spacing:1px;font-weight:800}
+    .card h3{font-size:18px;line-height:1.2;margin:9px 0;color:#fff}.card p{font-size:13px;color:var(--muted);margin:0 0 14px}
+    .read{font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:1px;color:var(--pink)}
+    .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.video{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+    .video-art{height:175px;background:radial-gradient(circle at 50% 45%,#ff2ca855,transparent 35%),linear-gradient(135deg,#1a0c2c,#0b1b31);display:grid;place-items:center;position:relative}
+    .play{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#ff2ca8;color:white;font-size:20px;box-shadow:0 0 35px #ff2ca877}
+    .video-art small{position:absolute;bottom:12px;right:13px;background:#000b;padding:4px 7px;border-radius:4px;font-size:10px}
+    .video-info{padding:15px}.video-info b{display:block;font-size:14px}.video-info span{font-size:11px;color:var(--muted)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:linear-gradient(120deg,#1d102b,#10101d);border:1px solid var(--line);border-radius:16px;padding:34px}
+    .about p{color:var(--muted);font-size:14px}.about-mark{min-height:220px;border-radius:12px;display:grid;place-items:center;background:radial-gradient(circle,#ff2ca833,transparent 55%),linear-gradient(135deg,#2b0e42,#11152c);font-size:clamp(45px,8vw,82px);font-weight:1000;letter-spacing:-5px;text-shadow:0 0 30px #ff2ca8}
+    .about-mark span{color:var(--pink)}
+    .subscribe{padding:55px 25px;text-align:center;border-radius:15px;background:linear-gradient(110deg,#55114d,#24104c 55%,#0e2b4a);border:1px solid #ffffff22;position:relative;overflow:hidden}
+    .subscribe h2{font-size:clamp(27px,5vw,44px)}.subscribe p{color:#e0d5ec;margin:12px auto 22px;max-width:570px;font-size:14px}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:#9f93ad;font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.social{display:flex;gap:15px;font-weight:800;color:#ded5e9}
+    .notice{font-size:11px;color:#8f829e;margin-top:12px}
+    @media(max-width:800px){.links{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 22px;background:#100b1b;flex-direction:column;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.grid,.video-grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.hero{min-height:490px}}
+    @media(max-width:540px){.wrap{width:min(100% - 28px,var(--max))}.grid,.video-grid{grid-template-columns:1fr}.section{padding:48px 0}.section-head{display:block}.section-head p{margin-top:10px}.hero-content{padding:65px 0}h1{letter-spacing:-3px}.hero-stats{gap:15px}.about{padding:22px}.footer-row{display:block}.social{margin-top:14px}}
+
+    /* ===== Extras: logo, animações, novas seções ===== */
+    :root{--blue:#3b75ff}
+    .logo-svg{height:40px;width:auto;display:block;filter:drop-shadow(0 0 10px #ff2ca866)}
+    .links{align-items:center}
+    .nav-sub{padding:10px 15px;border-radius:8px;background:linear-gradient(110deg,var(--pink),#a333ff);color:#fff!important;box-shadow:0 0 22px #ff2ca855;animation:pulseGlow 2.6s ease-in-out infinite}
+    @keyframes pulseGlow{0%,100%{box-shadow:0 0 16px #ff2ca844}50%{box-shadow:0 0 32px #ff2ca8aa,0 0 60px #8d55ff44}}
+    .hero-logo{width:min(440px,90%);height:auto;display:block;margin:0 0 22px;filter:drop-shadow(0 0 24px #ff2ca877);animation:flicker 6s infinite}
+    @keyframes flicker{0%,18%,22%,25%,53%,57%,100%{opacity:1}20%,24%,55%{opacity:.55}}
+    .synth{position:absolute;right:-5%;top:0;bottom:0;width:60%;pointer-events:none;z-index:0}
+    .synth .bigsun{position:absolute;right:18%;top:12%;width:clamp(180px,26vw,330px);aspect-ratio:1;border-radius:50%;background:linear-gradient(#ffd38b,#ff2ca8 55%,#8d55ff);box-shadow:0 0 90px #ff2ca877;-webkit-mask:repeating-linear-gradient(180deg,#000 0 14px,transparent 14px 18px);mask:repeating-linear-gradient(180deg,#000 0 14px,transparent 14px 18px);animation:sunFloat 7s ease-in-out infinite;opacity:.85}
+    @keyframes sunFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    .synth .floor{position:absolute;left:-20%;right:-20%;bottom:-10%;height:45%;background:linear-gradient(transparent,#09071100 0),repeating-linear-gradient(90deg,#38d9ff55 0 2px,transparent 2px 70px),repeating-linear-gradient(0deg,#ff2ca855 0 2px,transparent 2px 46px);transform:perspective(380px) rotateX(62deg);transform-origin:bottom;animation:gridMove 3s linear infinite;-webkit-mask:linear-gradient(transparent,#000 60%);mask:linear-gradient(transparent,#000 60%)}
+    @keyframes gridMove{from{background-position:0 0,0 0,0 0}to{background-position:0 0,0 0,0 46px}}
+    .hero-content{animation:heroIn .9s cubic-bezier(.2,.7,.2,1) both}
+    @keyframes heroIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+    .btn-sub-big{font-size:14px;padding:16px 24px;animation:pulseGlow 2.6s ease-in-out infinite}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.in{opacity:1;transform:none}
+    .grid .reveal:nth-child(2),.video-grid .reveal:nth-child(2),.cards4 .reveal:nth-child(2){transition-delay:.1s}
+    .grid .reveal:nth-child(3),.video-grid .reveal:nth-child(3),.cards4 .reveal:nth-child(3){transition-delay:.2s}
+    .cards4 .reveal:nth-child(4){transition-delay:.3s}
+    .card:hover .sun{transform:scale(1.08)}.thumb .sun{transition:transform .5s}
+    .video:hover{border-color:#38d9ff66;box-shadow:0 0 30px #38d9ff22}.video{transition:.22s}.video:hover .play{transform:scale(1.12)}.play{transition:transform .25s}
+    /* Linha do tempo de atualizações */
+    .timeline{position:relative;display:grid;gap:16px;padding-left:28px}
+    .timeline:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--pink),var(--purple),var(--cyan));box-shadow:0 0 12px #ff2ca877}
+    .tl-item{position:relative;background:linear-gradient(145deg,#1b1428,#100d19);border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:.22s}
+    .tl-item:hover{border-color:#8d55ff77;transform:translateX(4px)}
+    .tl-item:before{content:"";position:absolute;left:-26px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--pink);box-shadow:0 0 14px var(--pink);border:2px solid var(--bg)}
+    .tl-item:nth-child(2):before{background:var(--purple);box-shadow:0 0 14px var(--purple)}.tl-item:nth-child(3):before{background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+    .tl-date{font-size:10px;font-weight:950;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan)}
+    .tl-item h3{margin:6px 0 4px;font-size:17px}.tl-item p{margin:0;color:var(--muted);font-size:13px}
+    /* Segredos & curiosidades */
+    .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+    .fact{position:relative;padding:22px 20px;border-radius:13px;background:linear-gradient(160deg,#1d142b,#0f0c18);border:1px solid var(--line);overflow:hidden;transition:.25s}
+    .fact:after{content:"";position:absolute;inset:auto -40% -60% auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,var(--glow,#ff2ca8)33,transparent 70%);transition:.4s}
+    .fact:hover{transform:translateY(-4px);border-color:#ffffff33}.fact:hover:after{transform:scale(1.5)}
+    .fact .ico{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:20px;background:#ffffff0d;border:1px solid #ffffff1f;margin-bottom:14px}
+    .fact h3{font-size:16px;margin:0 0 6px;line-height:1.25}.fact p{font-size:13px;color:var(--muted);margin:0}
+    .tabs{display:inline-flex;gap:6px;padding:5px;border-radius:10px;background:#ffffff08;border:1px solid var(--line)}
+    .tab{background:none;border:0;color:#cfc4dd;font:inherit;font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:9px 14px;border-radius:7px;cursor:pointer;transition:.2s}
+    .tab[aria-selected="true"]{background:linear-gradient(110deg,var(--pink),#a333ff);color:#fff;box-shadow:0 0 18px #ff2ca855}
+    .tabpanel[hidden]{display:none}
+    .tabpanel .fact{animation:heroIn .5s both}
+    .float-sub{position:fixed;right:18px;bottom:18px;z-index:20;display:none;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;background:#ff0033;color:#fff;font-size:12px;font-weight:950;letter-spacing:.6px;text-transform:uppercase;box-shadow:0 8px 30px #ff003355;transition:.25s}
+    .float-sub.show{display:inline-flex;animation:heroIn .4s both}.float-sub:hover{transform:translateY(-2px)}
+    :focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+    @media(max-width:1080px){.links{gap:16px;font-size:12px}}
+    @media(max-width:1000px){.cards4{grid-template-columns:1fr 1fr}}
+    @media(max-width:800px){.synth{width:100%;opacity:.45}.nav-sub{text-align:center}}
+    @media(max-width:540px){.cards4{grid-template-columns:1fr}.timeline{padding-left:24px}.tabs{display:flex;width:100%}.tab{flex:1;padding:9px 6px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="GTA Vice início"><span class="brand-mark">V</span><svg class="logo-svg" aria-hidden="true" focusable="false" viewBox="0 0 300 80">
+  <defs><linearGradient id="lgNav" x1="0" x2="1"><stop offset="0" stop-color="#ff2ca8"/><stop offset=".55" stop-color="#8d55ff"/><stop offset="1" stop-color="#38d9ff"/></linearGradient></defs>
+  <text x="0" y="58" font-family="Inter,Arial Black,Arial,sans-serif" font-weight="900" font-size="54" letter-spacing="-2" fill="#f8f4ff">GTA</text>
+  <text x="122" y="58" font-family="Brush Script MT,Segoe Script,cursive" font-style="italic" font-weight="700" font-size="64" fill="url(#lgNav)">Vice</text>
+  <rect x="2" y="68" width="290" height="4" rx="2" fill="url(#lgNav)"/>
+</svg></a>
+    <nav class="links" id="navLinks">
+      <a href="#inicio">Início</a><a href="#noticias">Notícias</a><a href="#atualizacoes">Atualizações</a><a href="#segredos">Segredos</a><a href="#videos">Gameplays</a><a href="#sobre">Sobre</a>
+      <a class="nav-sub" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">▶ Inscreva-se</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="synth" aria-hidden="true"><div class="bigsun"></div><div class="floor"></div></div>
+    <div class="wrap"><div class="hero-content">
+      <svg class="hero-logo" viewBox="0 0 300 80" role="img" aria-label="GTA Vice">
+  <defs><linearGradient id="lgHero" x1="0" x2="1"><stop offset="0" stop-color="#ff2ca8"/><stop offset=".55" stop-color="#8d55ff"/><stop offset="1" stop-color="#38d9ff"/></linearGradient></defs>
+  <text x="0" y="58" font-family="Inter,Arial Black,Arial,sans-serif" font-weight="900" font-size="54" letter-spacing="-2" fill="#f8f4ff">GTA</text>
+  <text x="122" y="58" font-family="Brush Script MT,Segoe Script,cursive" font-style="italic" font-weight="700" font-size="64" fill="url(#lgHero)">Vice</text>
+  <rect x="2" y="68" width="290" height="4" rx="2" fill="url(#lgHero)"/>
+</svg>
+      <div class="eyebrow">Seu portal do universo GTA</div>
+      <h1>Bem-vindo<br>à <em>Vice City</em></h1>
+      <p>Notícias, novidades, curiosidades e gameplays de GTA 6. Fique por dentro de cada detalhe e acompanhe o universo Grand Theft Auto com a GTA Vice.</p>
+      <div class="actions">
+        <!-- TROQUE o link abaixo pelo endereço do seu canal no YouTube -->
+        <a class="btn btn-primary btn-sub-big" id="heroSub" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">▶ Inscreva-se no YouTube</a>
+        <a class="btn" href="#noticias">Explorar conteúdos ↓</a>
+      </div>
+      <div class="hero-stats"><div><b>GTA 6</b>Foco principal</div><div><b>News</b>Novidades</div><div><b>Segredos</b>Curiosidades</div><div><b>Gameplay</b>Vídeos</div></div>
+    </div></div>
+  </section>
+
+  <section class="section" id="noticias">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="kicker">Fique por dentro</div><h2>Últimas novidades</h2></div><p>Espaço para notícias, atualizações, teorias e descobertas do mundo de GTA.</p></div>
+      <div class="grid">
+        <article class="card reveal"><div class="thumb"><span class="sun"></span><span class="palm">♣</span><span class="tag">GTA 6 • NOVIDADES</span></div><div class="card-body"><div class="meta">Notícias e atualizações</div><h3>As novidades de GTA 6 em um só lugar</h3><p>Acompanhe notícias oficiais e informações confirmadas sobre o próximo capítulo de Grand Theft Auto.</p><a class="read" href="#videos">Ver conteúdos →</a></div></article>
+        <article class="card reveal"><div class="thumb" style="background:radial-gradient(circle at 70% 35%,#39d9ff77,transparent 24%),linear-gradient(135deg,#102c4c,#26113d)"><span class="sun" style="background:linear-gradient(#9deaff,#6b48ff)"></span><span class="palm">♣</span><span class="tag">SEGREDOS • CURIOSIDADES</span></div><div class="card-body"><div class="meta">Mistérios de Vice City</div><h3>Detalhes, pistas e curiosidades para explorar</h3><p>Um espaço para reunir easter eggs, teorias e detalhes interessantes do universo GTA.</p><a class="read" href="#videos">Explorar →</a></div></article>
+        <article class="card reveal"><div class="thumb" style="background:radial-gradient(circle at 70% 35%,#ffb34f77,transparent 24%),linear-gradient(135deg,#4b1936,#10152c)"><span class="sun" style="background:linear-gradient(#ffe49a,#ff7a49)"></span><span class="palm">♣</span><span class="tag">GAMEPLAY</span></div><div class="card-body"><div class="meta">Vídeos e exploração</div><h3>Gameplays, missões e descobertas</h3><p>Confira vídeos de gameplay e acompanhe aventuras pelo mundo de Grand Theft Auto.</p><a class="read" href="#videos">Assistir →</a></div></article>
+      </div>
+      <p class="notice">Os cards acima são modelos de conteúdo. Substitua os textos pelos seus artigos e novidades antes de publicar.</p>
+    </div>
+  </section>
+
+  <section class="section" id="atualizacoes">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="kicker">Linha do tempo</div><h2>Atualizações de GTA 6</h2></div><p>Os marcos mais importantes da jornada de GTA 6 até aqui — e o que vem pela frente.</p></div>
+      <div class="timeline">
+        <article class="tl-item reveal"><div class="tl-date">Dezembro de 2023</div><h3>Primeiro trailer oficial</h3><p>A Rockstar Games revelou GTA 6 ao mundo com o retorno a Vice City, no estado fictício de Leonida, e apresentou a protagonista Lucia.</p></article>
+        <article class="tl-item reveal"><div class="tl-date">Maio de 2025</div><h3>Segundo trailer e novos detalhes</h3><p>O segundo trailer aprofundou a história de Jason e Lucia e mostrou novas regiões de Leonida, além de capturas de tela e informações sobre os personagens.</p></article>
+        <article class="tl-item reveal"><div class="tl-date">Acompanhe</div><h3>Próximas novidades</h3><p>Datas, trailers e anúncios oficiais aparecem aqui assim que forem confirmados. Inscreva-se no canal para ser avisado em primeira mão.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="segredos" style="background:#ffffff05;border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="kicker">Mistérios de Vice City</div><h2>Segredos &amp; curiosidades</h2></div>
+        <div class="tabs" role="tablist" aria-label="Escolha a categoria">
+          <button class="tab" role="tab" id="tab-cur" aria-selected="true" aria-controls="panel-cur">Curiosidades</button>
+          <button class="tab" role="tab" id="tab-seg" aria-selected="false" aria-controls="panel-seg" tabindex="-1">Segredos</button>
+        </div>
+      </div>
+      <div class="tabpanel" id="panel-cur" role="tabpanel" aria-labelledby="tab-cur">
+        <div class="cards4">
+          <article class="fact reveal" style="--glow:#ff2ca8"><div class="ico">🌴</div><h3>Vice City desde 1997</h3><p>Vice City já existia no primeiro GTA, ao lado de Liberty City e San Andreas, muito antes do clássico de 2002.</p></article>
+          <article class="fact reveal" style="--glow:#8d55ff"><div class="ico">🗺️</div><h3>Leonida é a Flórida da Rockstar</h3><p>O estado de Leonida se inspira na Flórida, com pântanos, praias, Keys e a metrópole de Vice City inspirada em Miami.</p></article>
+          <article class="fact reveal" style="--glow:#38d9ff"><div class="ico">👥</div><h3>Dupla de protagonistas</h3><p>Lucia e Jason formam a dupla central de GTA 6, com uma história de parceria ao estilo “Bonnie e Clyde”.</p></article>
+          <article class="fact reveal" style="--glow:#ffb34f"><div class="ico">📼</div><h3>Recordes de visualização</h3><p>O primeiro trailer de GTA 6 quebrou recordes no YouTube, tornando-se um dos vídeos não musicais mais vistos em 24 horas.</p></article>
+        </div>
+      </div>
+      <div class="tabpanel" id="panel-seg" role="tabpanel" aria-labelledby="tab-seg" hidden>
+        <div class="cards4">
+          <article class="fact" style="--glow:#ff2ca8"><div class="ico">🔍</div><h3>Detalhes nos trailers</h3><p>Fãs analisam quadro a quadro em busca de referências a jogos antigos, placas, marcas e locais escondidos.</p></article>
+          <article class="fact" style="--glow:#8d55ff"><div class="ico">🥚</div><h3>Easter eggs clássicos</h3><p>A série é famosa por segredos como OVNIs, fantasmas e mensagens ocultas. Vamos caçar todos em GTA 6.</p></article>
+          <article class="fact" style="--glow:#38d9ff"><div class="ico">🧠</div><h3>Teorias da comunidade</h3><p>Mapa, conexões com outros jogos e retorno de personagens: reunimos as teorias mais comentadas pelos fãs.</p></article>
+          <article class="fact" style="--glow:#ffb34f"><div class="ico">🎥</div><h3>Segredos em vídeo</h3><p>Cada descoberta ganha vídeo no canal GTA Vice. <a class="read" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">Assistir →</a></p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="videos" style="background:#ffffff05;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="kicker">Do canal para o site</div><h2>Gameplays em destaque</h2></div><p>Adicione aqui seus vídeos mais recentes do YouTube.</p></div>
+      <div class="video-grid">
+        <a class="video reveal" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener"><div class="video-art"><span class="play">▶</span><small>SEU VÍDEO</small></div><div class="video-info"><b>Gameplay em destaque #1</b><span>Adicione o link do seu vídeo</span></div></a>
+        <a class="video reveal" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener"><div class="video-art" style="background:radial-gradient(circle at 50% 45%,#38d9ff55,transparent 35%),linear-gradient(135deg,#101b38,#24102e)"><span class="play">▶</span><small>SEU VÍDEO</small></div><div class="video-info"><b>Gameplay em destaque #2</b><span>Adicione o link do seu vídeo</span></div></a>
+        <a class="video reveal" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener"><div class="video-art" style="background:radial-gradient(circle at 50% 45%,#ffb14d55,transparent 35%),linear-gradient(135deg,#3a142e,#101329)"><span class="play">▶</span><small>SEU VÍDEO</small></div><div class="video-info"><b>Gameplay em destaque #3</b><span>Adicione o link do seu vídeo</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="wrap">
+      <div class="about reveal">
+        <div><div class="kicker">Conheça o projeto</div><h2>O universo GTA, no seu radar.</h2><p>A GTA Vice é um canal dedicado aos fãs de Grand Theft Auto, com foco em GTA 6. Aqui você encontra novidades, notícias, gameplays, curiosidades, segredos e teorias — sempre com paixão pelo mundo dos games.</p><a class="btn btn-primary" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">Conheça nosso canal ↗</a></div>
+        <div class="about-mark">GTA <span>VICE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="wrap"><div class="subscribe reveal">
+    <div class="kicker">Faça parte da comunidade</div><h2>Não perca nenhuma novidade.</h2>
+    <p>Inscreva-se no canal GTA Vice, ative as notificações e acompanhe as próximas gameplays, notícias e descobertas de GTA 6.</p>
+    <a class="btn btn-primary btn-sub-big" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">▶ Inscrever-se agora</a>
+  </div></div></section>
+</main>
+
+<footer><div class="wrap footer-row"><div>© <span id="year"></span> GTA Vice. Conteúdo feito por fãs.</div><div class="social"><a href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener">YOUTUBE</a><a href="#inicio">VOLTAR AO TOPO ↑</a></div></div>
+  <div class="wrap notice">GTA Vice é um projeto de fãs e não é afiliado à Rockstar Games. Grand Theft Auto e suas marcas pertencem aos respectivos titulares.</div>
+</footer>
+<a class="float-sub" id="floatSub" href="https://www.youtube.com/@GTAVICE-u9d" target="_blank" rel="noopener" aria-label="Inscreva-se no canal GTA Vice no YouTube">▶ Inscreva-se</a>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const btn=document.getElementById('menuBtn'), nav=document.getElementById('navLinks');
+  btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));
+  // Animação ao rolar
+  const els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});els.forEach(el=>io.observe(el))}else els.forEach(el=>el.classList.add('in'));
+  // Botão flutuante de inscrição
+  const fs=document.getElementById('floatSub'),hs=document.getElementById('heroSub');
+  if('IntersectionObserver' in window){new IntersectionObserver(([e])=>fs.classList.toggle('show',!e.isIntersecting)).observe(hs)}
+  // Abas segredos/curiosidades
+  const tabs=[...document.querySelectorAll('.tab')];
+  const select=t=>{tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})};
+  tabs.forEach((t,i)=>{t.addEventListener('click',()=>select(t));t.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];select(n);n.focus()}})});
+</script>
+</body>
+</html>
